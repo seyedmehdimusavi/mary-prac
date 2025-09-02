@@ -1,0 +1,60 @@
+<div class="essay-container">
+  <div class="header">
+    <h1>{{ getTemplateTitle() }}</h1>
+    
+    <div class="template-selector">
+      <label>
+        <input type="radio" name="templateType" value="essay" [checked]="selectedTemplate === 'essay'" (change)="changeTemplate('essay')">
+        <span>Essay</span>
+      </label>
+      <label>
+        <input type="radio" name="templateType" value="swt" [checked]="selectedTemplate === 'swt'" (change)="changeTemplate('swt')">
+        <span>SWT</span>
+      </label>
+      <label>
+        <input type="radio" name="templateType" value="sst" [checked]="selectedTemplate === 'sst'" (change)="changeTemplate('sst')">
+        <span>SST</span>
+      </label>
+    </div>
+  </div>
+
+  <div class="template-container">
+    <h2>Template to Memorize:</h2>
+    <div class="template-text">
+      {{ template }}
+    </div>
+  </div>
+
+  <div class="two-column-layout">
+    <div class="column input-container">
+      <h2>Practice Area:</h2>
+      <textarea 
+        [(ngModel)]="userInput" 
+        (input)="checkInput()" 
+        placeholder="Start typing the template here..."
+        rows="10"
+      ></textarea>
+    </div>
+
+    <div class="column result-container">
+      <h2>Your Progress:</h2>
+      <div class="result-text" *ngIf="userInput">
+        <span *ngFor="let word of userInput.split(' '); let i = index" [class]="getWordClass(i)">
+          {{ word }} 
+        </span>
+      </div>
+      <div class="empty-state" *ngIf="!userInput">
+        <p>Start typing to see your progress here</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="progress-container">
+    <div class="progress-bar" [style.width.%]="getProgress()"></div>
+    <span class="progress-text">{{ getProgress() }}% Complete</span>
+  </div>
+  
+  <div class="actions">
+    <button (click)="resetExercise()">Reset</button>
+  </div>
+</div>
