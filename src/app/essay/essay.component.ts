@@ -14,7 +14,12 @@ export class EssayComponent {
   essay: string = 'Recently, the phenomenon of T1 and its corresponding impact has sparked a heated debate. Although contested by many that the matter of N1 is highly beneficial, such an issue is regarded thoroughly both constructive and positive by a substantial number of individuals. I highly believe that N2 can be a plus, and I will investigate that throughout this essay. From a social standpoint, T2 can provide the society with noticeable effects that are rooted in the fact that merits, as well as advantages of N3, are crucial. According to my own experience, I performed an academic experiment that discovered the importance of N4. Thus, beneficial ramifications of N5 are visible. From a scientific point of view, T3 can provide the community with negative impacts that are related to the reality that demerits of N6 are remarkable. As a tangible example, some scientific research undertaken by a prestigious university described the role of N7. Hence, predicted outcomes of N8 are noticeable. To conclude, while there are several compelling arguments on both sides, I profoundly believe that the benefits of T4 far outweigh its drawbacks. Not only do the advantages of N9 prove the significance of N10, but also pinpoint possible implications.';
   swt: string = 'While the impacts of n and n such as n and n are important, the effects of n and n such as n and n are remarkable, the influences of n and n such as n and n are significant.';
   sst: string = 'The lecture mainly was about N. While the impacts of n and n such as n and n are important. The effects of n and n such as n and n are remarkable. The influences of n and n such as n and n are significant. In conclusion, the lecture was informative.';
-  
+  di:string = 'This image provides information about N and N, focusing on N and N. The most important point is N and N, which shows N and N. Another visible feature is N and N, which indicates N and N. To conclude, the data points to N and N, highlighting the significance of N and N.'
+  retell_lecture:string = 'The lecture provides information about N and N, focusing on N and N. 2-The most important point is N and N, which shows N and N. 3-Another visible feature is N and N, which indicates N and N. 4-Lastly, it is quite clear that N and N which relates to N and N. 5-To conclude, the data points to N and N, highlighting the significance of N and N.';
+  sGD:string = '-The discussion between the three speakers was about N, focusing on N -The most important point is N, which shows N -Another visible feature is N, which indicates N -In addition, the discussion also included N, which was connected to N -Speaker 1 talked about N, and explained N -The speaker also mentioned N, which related to N -Speaker 2 discussed N, but added a point about N -Another idea from this speaker was N, which connected to N -Speaker 3 focused on N and also explained N -This speaker highlighted N which added to the discussion. -In the end, the discussion highlighted N, showing both shared concerns and some different opinions on N as well as';
+  rTS:string = 'Hi, I just want to talk about N -Positive: "I’m happy to do N -Concerned: "I’m having trouble because N -To make sure this works well, I’ll need N -I’d really appreciate it if you could N, so everything can be done smoothly.- Thanks for your help, I just want to make sure this goes well regarding N';
+
+
   // Selected template type
   selectedTemplate: string = 'essay';
   
@@ -24,6 +29,10 @@ export class EssayComponent {
       case 'essay': return this.essay;
       case 'swt': return this.swt;
       case 'sst': return this.sst;
+      case 'di': return this.di;
+      case 'retell_lecture': return this.retell_lecture;
+      case 'sGD': return this.sGD;
+      case 'rTS': return this.rTS;
       default: return this.essay;
     }
   }
@@ -83,6 +92,10 @@ export class EssayComponent {
       case 'essay': return 'Essay Template';
       case 'swt': return 'Summarize Written Text';
       case 'sst': return 'Summarize Spoken Text';
+      case 'di': return 'Describe Image';
+      case 'retell_lecture': return 'Retell Lecture';
+      case 'sGD': return 'Summarize GD';
+      case 'rTS': return 'Retell TS';
       default: return 'Template';
     }
   }
