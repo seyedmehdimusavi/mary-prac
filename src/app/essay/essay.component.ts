@@ -14,7 +14,7 @@ export class EssayComponent {
   selectedTemplate: string = 'essay1';
 
   // Available templates
-  essay1: string = ' In recent years, the phenomenon of TOPIC has triggered a heated debate among people and intellectuals. While some agree that TOPIC, others firmly disagree with this view. I personally agree that TOPIC and will explain my opinion throughout the essay. To start with, POINT 1 (Reason 1). This is because EXPLANATION. As a tangible example, a public investigation conducted by high-profile researchers at Harvard University demonstrates that EXAMPLE. As a result, POINT 1 requires thorough evaluation. Furthermore, POINT 2 (Reason 2). This highlights that EXPLANATION. As an illustration, based on my own experience, EXAMPLE. Thus, POINT 2 (Reason 2) calls for detailed analysis. In conclusion, I strongly agree that TOPIC. (Despite some opposing views, I believe this perspective should be dealt with carefully in the future to ensure balanced outcomes.).';
+  essay1: string = ' In recent years, the phenomenon of TOPIC has triggered a heated debate among people and intellectuals. While some agree that TOPIC, others firmly disagree with this view. I personally agree that TOPIC and will explain my opinion throughout the essay. To start with, POINT 1 (Reason 1). This is because EXPLANATION. As a tangible example, a public investigation conducted by high-profile researchers at Harvard University demonstrates that EXAMPLE. As a result, POINT 1 requires thorough evaluation. Furthermore, POINT 2 (Reason 2). This highlights that EXPLANATION. As an illustration, based on my own experience, EXAMPLE. Thus, POINT 2 (Reason 2) calls for detailed analysis. In conclusion, I strongly agree that TOPIC. (Despite some opposing views, I believe this perspective should be dealt with carefully in the future to ensure balanced outcomes).';
   essay1t:string =`در سال‌های اخیر، پدیده‌ی موضوع  باعث بحث‌های داغی میان مردم و اندیشمندان شده است. در حالی که برخی با موضوع موافق هستند، دیگران به شدت با آن مخالف‌اند. من شخصاً با موضوع موافقم و نظر خود را در طول این مقاله توضیح خواهم داد.
 در ابتدا، نکته‌ی اول (دلیل اول). دلیلش این است که توضیح. برای مثال، یک تحقیق عمومی که توسط پژوهشگران برجسته‌ی دانشگاه هاروارد انجام شده نشان می‌دهد که نمونه / مثال. در نتیجه، نکته‌ی اول نیاز به بررسی دقیق دارد.
 علاوه بر این، نکته‌ی دوم (دلیل دوم). این نشان می‌دهد که توضیح. به عنوان نمونه، بر اساس تجربه‌ی شخصی خودم، مثال. بنابراین، نکته‌ی دوم (دلیل دوم) نیز باید با جزئیات بیشتری بررسی شود.
@@ -61,12 +61,7 @@ essay6t:string=`مقاله‌های ترکیبی (Mixed Essays)
 در پایان، پس از بررسی جنبه‌های مختلف این موضوع، من باور دارم که نظر شما (YOUR OPINION) درست است.
 `;
 
-di:string=`The bar chart provides information about [topic].
-The X-axis shows [categories or time periods], and the Y-axis shows [units or measurement].
-Various numbers can be seen in the picture, such as N, N, as well as N.
-Additionally, other details are visible, including N and N, as well as N.
-To conclude, I can notice that the highest value for N could be around N.
-`;
+di:string=`The bar chart provides information about [topic]. The X-axis shows [categories or time periods], and the Y-axis shows [units or measurement]. Various numbers can be seen in the picture, such as N, N, as well as N. Additionally, other details are visible, including N and N, as well as N. To conclude, I can notice that the highest value for N could be around N.`;
 dit:string=`نمودار میله‌ای اطلاعاتی درباره [موضوع] ارائه می‌دهد.
 محور افقی (X) نشان‌دهنده [دسته‌ها یا بازه‌های زمانی] و محور عمودی (Y) نشان‌دهنده [واحدها یا مقادیر اندازه‌گیری] است.
 اعداد مختلفی در نمودار دیده می‌شوند، مانند N، N، و همچنین N.
@@ -74,25 +69,14 @@ dit:string=`نمودار میله‌ای اطلاعاتی درباره [موضو
 در پایان، می‌توانم مشاهده کنم که بالاترین مقدار برای N می‌تواند حدود N باشد.`;
 
 
-di2:string = `This image provides information about [topic]. 
-On one side of the image, I can see N and N, as well as N.
-Various features can be seen in the picture, such as N, N, and N. 
-Additionally, other details are visible, including N and N, as well as N. 
-To conclude, I can notice that the image shows (Topic).
-`;
+di2:string = `This image provides information about [topic]. On one side of the image, I can see N and N, as well as N. Various features can be seen in the picture, such as N, N, and N. Additionally, other details are visible, including N and N, as well as N. To conclude, I can notice that the image shows (Topic).`;
 dit2:string=`این تصویر اطلاعاتی درباره [موضوع] ارائه می‌دهد. 
 ویژگی‌های مختلفی در تصویر قابل مشاهده هستند، مانند N، N، و همچنین N. 
 در یک سمت تصویر، می‌توانم N و N و همچنین N را ببینم. 
 علاوه بر این، جزئیات دیگری نیز قابل مشاهده است، از جمله N و N، و همچنین N. 
 در پایان، می‌توانم مشاهده کنم که تصویر [موضوع] را نشان می‌دهد.`;
 
-sgd:string=`The discussion between the three speakers was about TOPIC, focusing on N. 
-First speaker talked about N, and explained N as well as N. The speaker also mentioned N, and N and then followed by N and N. 
-Second speaker discussed N, but added a point about N and N. Another idea from this speaker was N as well as N and then he(she) mentioned N.
-Third speaker explained N and also focused on N and N. In addition to this information, this speaker was talking about N and N and then agreed (disagreed) with N, as well as N.
-The majority of speaker agreed(disagreed) with N.
-In the end, some points of discussion were N and N as well as N, and then another important matter that I could conclude is N and N.
-As a conclusion to this discussion, I noticed that [N] was a good idea.`
+sgd:string=`The discussion between the three speakers was about TOPIC, focusing on N. First speaker talked about N, and explained N as well as N. The speaker also mentioned N, and N and then followed by N and N. Second speaker discussed N, but added a point about N and N. Another idea from this speaker was N as well as N and then he(she) mentioned N. Third speaker explained N and also focused on N and N. In addition to this information, this speaker was talking about N and N and then agreed (disagreed) with N, as well as N. The majority of speaker agreed(disagreed) with N. In the end, some points of discussion were N and N as well as N, and then another important matter that I could conclude is N and N. As a conclusion to this discussion, I noticed that [N] was a good idea.`
 
 sgdt:string=`این گفت‌وگو بین سه سخنران درباره [موضوع] بود که بر [N] تمرکز داشت.
 سخنران اول درباره [N] صحبت کرد و [N] را همراه با [N] توضیح داد. او همچنین به [N] و [N] اشاره کرد و سپس به [N] و [N] پرداخت.
@@ -104,32 +88,20 @@ sgdt:string=`این گفت‌وگو بین سه سخنران درباره [مو�
 `;
 
 
-sst:string=`The lecture was about NP1, which focused on NP2. 
-The speaker explained NP3, and highlighted the importance of NP4. 
-Ultimately, while NP5 and NP6 were mentioned, the impacts of NP7 were emphasized.`;
+sst:string=`The lecture was about NP1, which focused on NP2.The speaker explained NP3, and highlighted the importance of NP4. Ultimately, while NP5 and NP6 were mentioned, the impacts of NP7 were emphasized.`;
 
 sstt:string=`سخنرانی درباره [NP1] بود که بر [NP2] تمرکز داشت.
 سخنران [NP3] را توضیح داد و بر اهمیت [NP4] تأکید کرد.
 در نهایت، در حالی که به [NP5] و [NP6] اشاره شد، بر تأثیرات [NP7] تأکید گردید.
 `;
 
-rl:string=`The lecture provides information about N and N, focusing on N and N. 
-The most important point is N and N, which shows N and N. 
-Another visible feature is N and N, which indicates N and N. 
-Lastly, it is quite clear that N and N which relates to N and N. 
-To conclude, the data points to N and N, highlighting the significance of N and N.
-`;
+rl:string=`The lecture provides information about N and N, focusing on N and N. The most important point is N and N, which shows N and N. Another visible feature is N and N, which indicates N and N. Lastly, it is quite clear that N and N which relates to N and N. To conclude, the data points to N and N, highlighting the significance of N and N.`;
 
 rlt:string=`سخنرانی درباره [NP1] بود که بر [NP2] تمرکز داشت.
 سخنران [NP3] را توضیح داد و بر اهمیت [NP4] تأکید کرد.
 در نهایت، در حالی که به [NP5] و [NP6] اشاره شد، بر تأثیرات [NP7] تأکید گردید.
 `
-rts:string=`Hi, I just want to talk about N.
-Positive: "I’m happy to do N -Concerned: "I’m having trouble because N. 
-To make sure this works well, I’ll need N. 
-I’d really appreciate it if you could N, so everything can be done smoothly.
-Thanks for your help, I just want to make sure this goes well regarding N.
-`;
+rts:string=`Hi, I just want to talk about N. Positive: "I’m happy to do N -Concerned: "I’m having trouble because N. To make sure this works well, I’ll need N. I’d really appreciate it if you could N, so everything can be done smoothly. Thanks for your help, I just want to make sure this goes well regarding N.`;
 
 rtst:string=`سلام، فقط می‌خواهم درباره [N] صحبت کنم.
 مثبت: «خوشحالم که می‌توانم [N] را انجام دهم.»
@@ -140,8 +112,8 @@ rtst:string=`سلام، فقط می‌خواهم درباره [N] صحبت کن�
 `
 
   // Placeholder templates for missing types
-  swt: string = 'Summarize Written Text template coming soon...';
-  swtt: string = 'قالب خلاصه متن نوشتاری به زودی...';
+  swt: string = 'S1, S2, which mean that S3, so S4, S5';
+  swtt: string = 'S1، S2، که به معنای S3 است، بنابراین S4، S5';
   
   essay: string = this.essay1; // Default essay points to essay1
   essayt: string = this.essay1t;
@@ -154,24 +126,6 @@ rtst:string=`سلام، فقط می‌خواهم درباره [N] صحبت کن�
   
   rTS: string = this.rts;
   rTSt: string = this.rtst;
-  
-  wfd_1: string = 'Write from Dictation 1 template...';
-  wfd_1t: string = 'قالب دیکته 1...';
-  
-  wfd_2: string = 'Write from Dictation 2 template...';
-  wfd_2t: string = 'قالب دیکته 2...';
-  
-  wfd_3: string = 'Write from Dictation 3 template...';
-  wfd_3t: string = 'قالب دیکته 3...';
-  
-  wfd_4: string = 'Write from Dictation 4 template...';
-  wfd_4t: string = 'قالب دیکته 4...';
-  
-  wfd_5: string = 'Write from Dictation 5 template...';
-  wfd_5t: string = 'قالب دیکته 5...';
-  
-  wfd_6: string = 'Write from Dictation 6 template...';
-  wfd_6t: string = 'قالب دیکته 6...';
 
   // Get the current template based on selection
   get template(): string {
@@ -190,12 +144,6 @@ rtst:string=`سلام، فقط می‌خواهم درباره [N] صحبت کن�
       case 'retell_lecture': return this.retell_lecture;
       case 'sGD': return this.sGD;
       case 'rTS': return this.rTS;
-      case 'wfd-1': return this.wfd_1;
-      case 'wfd-2': return this.wfd_2;
-      case 'wfd-3': return this.wfd_3;
-      case 'wfd-4': return this.wfd_4;
-      case 'wfd-5': return this.wfd_5;
-      case 'wfd-6': return this.wfd_6;
       default: return this.essay1;
     }
   }
@@ -217,12 +165,6 @@ rtst:string=`سلام، فقط می‌خواهم درباره [N] صحبت کن�
       case 'retell_lecture': return this.retell_lecturet;
       case 'sGD': return this.sGDt;
       case 'rTS': return this.rTSt;
-      case 'wfd-1': return this.wfd_1t;
-      case 'wfd-2': return this.wfd_2t;
-      case 'wfd-3': return this.wfd_3t;
-      case 'wfd-4': return this.wfd_4t;
-      case 'wfd-5': return this.wfd_5t;
-      case 'wfd-6': return this.wfd_6t;
       default: return this.essay1t;
     }
   }
@@ -293,12 +235,6 @@ rtst:string=`سلام، فقط می‌خواهم درباره [N] صحبت کن�
       case 'retell_lecture': return 'Retell Lecture';
       case 'sGD': return 'Summarize GD';
       case 'rTS': return 'Retell TS';
-      case 'wfd-1': return 'Write from Dictation 1';
-      case 'wfd-2': return 'Write from Dictation 2';
-      case 'wfd-3': return 'Write from Dictation 3';
-      case 'wfd-4': return 'Write from Dictation 4';
-      case 'wfd-5': return 'Write from Dictation 5';
-      case 'wfd-6': return 'Write from Dictation 6';
       default: return 'Template';
     }
   }
