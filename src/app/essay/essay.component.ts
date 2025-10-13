@@ -135,22 +135,15 @@ rtst:string=`سلام، فقط می‌خواهم درباره [N] صحبت کن�
 خیلی ممنون می‌شوم اگر بتوانید [N] را انجام دهید تا همه‌چیز به‌صورت روان پیش برود.
 از کمکتان سپاسگزارم، فقط می‌خواهم مطمئن شوم که همه‌چیز درباره [N] به‌خوبی پیش می‌رود.
 `
+  essay1:	'Opinion (Agree/Disagree) Essays';
+ essay2:	'Discussion Essays'; 
+  essay3:	'Problem-Solution Essays';
+  essay4:	'Advantage-Disadvantage Essays';
+  essay5:	'Cause-Effect Essays';
+  essay6:	'Mixed Essays';
+di:'Bar Chart-Line chart';
+di2:'Other DI';
 
-  
-  retell_lecture:string = 'The lecture provides information about N and N, focusing on N and N. 2-The most important point is N and N, which shows N and N. 3-Another visible feature is N and N, which indicates N and N. 4-Lastly, it is quite clear that N and N which relates to N and N. 5-To conclude, the data points to N and N, highlighting the significance of N and N.';
-  sGD:string = '-The discussion between the three speakers was about N, focusing on N -The most important point is N, which shows N -Another visible feature is N, which indicates N -In addition, the discussion also included N, which was connected to N -Speaker 1 talked about N, and explained N -The speaker also mentioned N, which related to N -Speaker 2 discussed N, but added a point about N -Another idea from this speaker was N, which connected to N -Speaker 3 focused on N and also explained N -This speaker highlighted N which added to the discussion. -In the end, the discussion highlighted N, showing both shared concerns and some different opinions on N as well as';
-  rTS:string = 'Hi, I just want to talk about N -Positive: "I’m happy to do N -Concerned: "I’m having trouble because N -To make sure this works well, I’ll need N -I’d really appreciate it if you could N, so everything can be done smoothly.- Thanks for your help, I just want to make sure this goes well regarding N';
-  wfd_1:string = 'course courses university student students lecture lectures history science scientists data number studies studying projects project support subject subjects field theory theories';
-  wfd_2:string = 'language business library libraries technology training important semester lecture tomorrow building teacher teachers internet website social college department education graduate graduates professor company career financial increase';
-  wfd_3:string = 'national international academic arguments argument assignment assignments biology laboratory pollution regulations system systems travel tutorial tutorials visited visiting studying accommodation accommodate';
-  wfd_4:string = 'achievements unemployment postgraduate undergraduate undergraduates unemployment archaeology architecture architectural atmospheric astronomy biotechnology bibliography circumstances contemporary construction';
-  wfd_5:string = 'continuous contribution controversial development dissertation electricity environment environmental implementation independent industrial linguistics mathematics mechanical phenomena philosophy physical psychology quantitative questionnaire';
-  wfd_6:string = 'recommendation recognition regulation representative representatives responsibility simultaneously statistical statistics substantial sustainable technology unpredictable urbanization utilization valuable variety vocabulary worldwide';
-
-
-  // Selected template type
-  selectedTemplate: string = 'essay';
-  
   // Get the current template based on selection
   get template(): string {
     switch(this.selectedTemplate) {
