@@ -10,8 +10,11 @@ import { CommonModule } from '@angular/common';
   styleUrl: './essay.component.scss'
 })
 export class EssayComponent {
+  // Selected template type
+  selectedTemplate: string = 'essay1';
+
   // Available templates
-  essay1: string = ' In recent years, the phenomenon of TOPIC has triggered a heated debate among people and intellectuals. While some agree that TOPIC, others firmly disagree with this view. I personally agree that TOPIC and will explain my opinion throughout the essay. To start with, POINT 1 (Reason 1). This is because EXPLANATION. As a tangible example, a public investigation conducted by high-profile researchers at Harvard University demonstrates that EXAMPLE. As a result, POINT 1 requires thorough evaluation. Furthermore, POINT 2 (Reason 2). This highlights that EXPLANATION. As an illustration, based on my own experience, EXAMPLE. Thus, POINT 2 (Reason 2) calls for detailed analysis. In conclusion, I strongly agree that TOPIC. (Despite some opposing views, I believe this perspective should be dealt with carefully in the future to ensure balanced outcomes.)';
+  essay1: string = ' In recent years, the phenomenon of TOPIC has triggered a heated debate among people and intellectuals. While some agree that TOPIC, others firmly disagree with this view. I personally agree that TOPIC and will explain my opinion throughout the essay. To start with, POINT 1 (Reason 1). This is because EXPLANATION. As a tangible example, a public investigation conducted by high-profile researchers at Harvard University demonstrates that EXAMPLE. As a result, POINT 1 requires thorough evaluation. Furthermore, POINT 2 (Reason 2). This highlights that EXPLANATION. As an illustration, based on my own experience, EXAMPLE. Thus, POINT 2 (Reason 2) calls for detailed analysis. In conclusion, I strongly agree that TOPIC. (Despite some opposing views, I believe this perspective should be dealt with carefully in the future to ensure balanced outcomes.).';
   essay1t:string =`در سال‌های اخیر، پدیده‌ی موضوع  باعث بحث‌های داغی میان مردم و اندیشمندان شده است. در حالی که برخی با موضوع موافق هستند، دیگران به شدت با آن مخالف‌اند. من شخصاً با موضوع موافقم و نظر خود را در طول این مقاله توضیح خواهم داد.
 در ابتدا، نکته‌ی اول (دلیل اول). دلیلش این است که توضیح. برای مثال، یک تحقیق عمومی که توسط پژوهشگران برجسته‌ی دانشگاه هاروارد انجام شده نشان می‌دهد که نمونه / مثال. در نتیجه، نکته‌ی اول نیاز به بررسی دقیق دارد.
 علاوه بر این، نکته‌ی دوم (دلیل دوم). این نشان می‌دهد که توضیح. به عنوان نمونه، بر اساس تجربه‌ی شخصی خودم، مثال. بنابراین، نکته‌ی دوم (دلیل دوم) نیز باید با جزئیات بیشتری بررسی شود.
@@ -135,22 +138,55 @@ rtst:string=`سلام، فقط می‌خواهم درباره [N] صحبت کن�
 خیلی ممنون می‌شوم اگر بتوانید [N] را انجام دهید تا همه‌چیز به‌صورت روان پیش برود.
 از کمکتان سپاسگزارم، فقط می‌خواهم مطمئن شوم که همه‌چیز درباره [N] به‌خوبی پیش می‌رود.
 `
-  essay1:	'Opinion (Agree/Disagree) Essays';
- essay2:	'Discussion Essays'; 
-  essay3:	'Problem-Solution Essays';
-  essay4:	'Advantage-Disadvantage Essays';
-  essay5:	'Cause-Effect Essays';
-  essay6:	'Mixed Essays';
-di:'Bar Chart-Line chart';
-di2:'Other DI';
+
+  // Placeholder templates for missing types
+  swt: string = 'Summarize Written Text template coming soon...';
+  swtt: string = 'قالب خلاصه متن نوشتاری به زودی...';
+  
+  essay: string = this.essay1; // Default essay points to essay1
+  essayt: string = this.essay1t;
+  
+  retell_lecture: string = this.rl;
+  retell_lecturet: string = this.rlt;
+  
+  sGD: string = this.sgd;
+  sGDt: string = this.sgdt;
+  
+  rTS: string = this.rts;
+  rTSt: string = this.rtst;
+  
+  wfd_1: string = 'Write from Dictation 1 template...';
+  wfd_1t: string = 'قالب دیکته 1...';
+  
+  wfd_2: string = 'Write from Dictation 2 template...';
+  wfd_2t: string = 'قالب دیکته 2...';
+  
+  wfd_3: string = 'Write from Dictation 3 template...';
+  wfd_3t: string = 'قالب دیکته 3...';
+  
+  wfd_4: string = 'Write from Dictation 4 template...';
+  wfd_4t: string = 'قالب دیکته 4...';
+  
+  wfd_5: string = 'Write from Dictation 5 template...';
+  wfd_5t: string = 'قالب دیکته 5...';
+  
+  wfd_6: string = 'Write from Dictation 6 template...';
+  wfd_6t: string = 'قالب دیکته 6...';
 
   // Get the current template based on selection
   get template(): string {
     switch(this.selectedTemplate) {
+      case 'essay1': return this.essay1;
+      case 'essay2': return this.essay2;
+      case 'essay3': return this.essay3;
+      case 'essay4': return this.essay4;
+      case 'essay5': return this.essay5;
+      case 'essay6': return this.essay6;
       case 'essay': return this.essay;
       case 'swt': return this.swt;
       case 'sst': return this.sst;
       case 'di': return this.di;
+      case 'di2': return this.di2;
       case 'retell_lecture': return this.retell_lecture;
       case 'sGD': return this.sGD;
       case 'rTS': return this.rTS;
@@ -160,7 +196,34 @@ di2:'Other DI';
       case 'wfd-4': return this.wfd_4;
       case 'wfd-5': return this.wfd_5;
       case 'wfd-6': return this.wfd_6;
-      default: return this.essay;
+      default: return this.essay1;
+    }
+  }
+
+  // Get the translation of the current template
+  get templateTranslation(): string {
+    switch(this.selectedTemplate) {
+      case 'essay1': return this.essay1t;
+      case 'essay2': return this.essay2t;
+      case 'essay3': return this.essay3t;
+      case 'essay4': return this.essay4t;
+      case 'essay5': return this.essay5t;
+      case 'essay6': return this.essay6t;
+      case 'essay': return this.essayt;
+      case 'swt': return this.swtt;
+      case 'sst': return this.sstt;
+      case 'di': return this.dit;
+      case 'di2': return this.dit2;
+      case 'retell_lecture': return this.retell_lecturet;
+      case 'sGD': return this.sGDt;
+      case 'rTS': return this.rTSt;
+      case 'wfd-1': return this.wfd_1t;
+      case 'wfd-2': return this.wfd_2t;
+      case 'wfd-3': return this.wfd_3t;
+      case 'wfd-4': return this.wfd_4t;
+      case 'wfd-5': return this.wfd_5t;
+      case 'wfd-6': return this.wfd_6t;
+      default: return this.essay1t;
     }
   }
   
@@ -216,10 +279,17 @@ di2:'Other DI';
   // Get template title based on selection
   getTemplateTitle(): string {
     switch(this.selectedTemplate) {
+      case 'essay1': return 'Opinion (Agree/Disagree) Essays';
+      case 'essay2': return 'Discussion Essays';
+      case 'essay3': return 'Problem-Solution Essays';
+      case 'essay4': return 'Advantage-Disadvantage Essays';
+      case 'essay5': return 'Cause-Effect Essays';
+      case 'essay6': return 'Mixed Essays';
       case 'essay': return 'Essay Template';
       case 'swt': return 'Summarize Written Text';
       case 'sst': return 'Summarize Spoken Text';
-      case 'di': return 'Describe Image';
+      case 'di': return 'Bar Chart-Line chart';
+      case 'di2': return 'Other DI';
       case 'retell_lecture': return 'Retell Lecture';
       case 'sGD': return 'Summarize GD';
       case 'rTS': return 'Retell TS';
@@ -229,8 +299,12 @@ di2:'Other DI';
       case 'wfd-4': return 'Write from Dictation 4';
       case 'wfd-5': return 'Write from Dictation 5';
       case 'wfd-6': return 'Write from Dictation 6';
-
       default: return 'Template';
     }
+  }
+
+  // Get template description (English title)
+  getTemplateDescription(): string {
+    return this.getTemplateTitle();
   }
 }
